@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgb(4, 65, 46);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.to-do-app {
+    width: 600px;
+    height: 100vh;
+    background-color: rgb(4, 65, 46);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.to-do-app:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
-.App-link {
-  color: #61dafb;
+.add-task-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nothing-to-do {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    letter-spacing: 20px;
 }
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.error-massage {
+    text-align: center;
+    font-size: 25px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    color: rgb(0, 255, 174);
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    word-spacing: 15px;
+    letter-spacing: 8px;
+}
+
+
+
+
